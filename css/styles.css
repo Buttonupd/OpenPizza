@@ -1,0 +1,13 @@
+.container{
+    
+    background-image: url(../images/nice-looking.jpeg);
+    background-position: cover;
+    background-size: cover;
+}
+.container h2{
+    color: lime;
+    text-align: center;
+}
+.container h2 img{
+    float: center;
+}
