@@ -48,3 +48,15 @@ function Address(street, city, state){
     this.addressCity = city;
     this.addressState = state;
 }
+Pizza.prototype.calculatesSizePrice = function(){
+    if (this.pizzaSize === "small"){
+        this.pizzaPrice = 800;
+    } else if(this.pizzaSize === "medium"){
+        this.pizzaPrice = 1600;
+    } else{
+        this.pizzaPrice = 3200;
+    }
+}
+Pizza.prototype.addToppings = function(){
+    
+}
