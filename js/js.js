@@ -57,6 +57,18 @@ Pizza.prototype.calculatesSizePrice = function(){
         this.pizzaPrice = 3200;
     }
 }
-Pizza.prototype.addToppings = function(){
-    
-}
+izza.prototype.addToppings = function () {
+    if (this.pizzaSize === "Small") {
+      for (i=0; i<this.pizzaToppings.length; i++) {
+        this.pizzaPrice += .50;
+      }
+    } else if (this.pizzaSize === "Medium") {
+      for (i=0; i<this.pizzaToppings.length; i++) {
+        this.pizzaPrice += .75;
+      }
+    } else {
+      for (i=0; i<this.pizzaToppings.length; i++) {
+        this.pizzaPrice += 1;
+      }
+    }
+  }
