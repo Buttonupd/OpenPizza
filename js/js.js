@@ -60,15 +60,16 @@ Pizza.prototype.calculatesSizePrice = function(){
 izza.prototype.addToppings = function () {
     if (this.pizzaSize === "Small") {
       for (i=0; i<this.pizzaToppings.length; i++) {
-        this.pizzaPrice += .50;
+        this.pizzaPrice += 150;
       }
     } else if (this.pizzaSize === "Medium") {
       for (i=0; i<this.pizzaToppings.length; i++) {
-        this.pizzaPrice += .75;
+        this.pizzaPrice += 175;
       }
     } else {
       for (i=0; i<this.pizzaToppings.length; i++) {
-        this.pizzaPrice += 1;
+        this.pizzaPrice += 225;
       }
     }
   }
+  
