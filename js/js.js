@@ -72,4 +72,18 @@ izza.prototype.addToppings = function () {
       }
     }
   }
-  
+  izza.prototype.addCrust = function () {
+    if (this.pizzaSize === "Small") {
+      for (i=0; i<this.pizzaCrust.length; i++) {
+        this.pizzaPrice += 100;
+      }
+    } else if (this.pizzaSize === "Medium") {
+      for (i=0; i<this.pizzaCrust.length; i++) {
+        this.pizzaPrice += 200;
+      }
+    } else {
+      for (i=0; i<this.pizzaCrust.length; i++) {
+        this.pizzaPrice += 400;
+      }
+    }
+  }
