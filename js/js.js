@@ -37,6 +37,14 @@ function Order(name, total){
     this.delivereyAddress;
     this.delivery;
 };
-function Pizza(size, topping, price, Crust){
+function Pizza(size, toppings, price, Crust){
     this.pizzaSize = size;
+    this.pizzaToppings = toppings;
+    this.pizzaPrice = price;
+    this.pizzaCrust = Crust;
+};
+function Address(street, city, state){
+    this.addressStreet = street;
+    this.addressCity = city;
+    this.addressState = state;
 }
