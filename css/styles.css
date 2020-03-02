@@ -37,10 +37,13 @@
 }
 #bob p{
     text-align: center;
-    font-size: 5pc;
+    font-size: x-large;
     color-interpolation-filters: linearRGB;
     caret-color: midnightblue;
-    color:moccasin;
+	color:maroon;
+	font-weight: bold;
+	font-family: fantasy;
+	font-style: italic;
 }
 
 #row{

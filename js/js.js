@@ -32,7 +32,7 @@ $(document).ready(function(){
 });
 
 function getTotal() {
-  var text1 = "<h3>You Ordered:</h3>";
+  var text1 = "<h3>You Order is as follows:</h3>";
   var text2 = "";
   var sizeTotal = 0;
   var runningTotal = 0;
@@ -81,7 +81,7 @@ function getSauce(runningTotal, text1, text2) {
      sauceTotal = 20;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   } else if (selectedSauce === "No Sauce") {
-     sauceTotal = 20;
+     sauceTotal = .00;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   }
   runningTotal = (runningTotal + sauceTotal);
@@ -99,13 +99,13 @@ function getCheese(runningTotal, text1, text2) {
      }
   }
   if (selectedCheese === "Regular Cheese") {
-     cheeseTotal = 0;
+     cheeseTotal = 100;
      text2 = text2+"ksh"+cheeseTotal+".00<br>";
   } else if (selectedCheese === "No Cheese") {
      cheeseTotal = 0;
      text2 = text2+"ksh"+cheeseTotal+".00<br>";
   } else if (selectedCheese === "Extra Cheese") {
-     cheeseTotal = 3;
+     cheeseTotal = 300;
      text2 = text2+"ksh"+cheeseTotal+".00<br>";
   }
   runningTotal = (runningTotal + cheeseTotal);
@@ -123,19 +123,19 @@ function getCrust(runningTotal, text1, text2) {
      }
   }
   if (selectedCrust === "Plain Crust") {
-     crustTotal = 0;
+     crustTotal = 100;
    text2 = text2+"ksh"+crustTotal+".00<br>";
   } else if (selectedCrust === "Garlic Butter Crust") {
-     crustTotal = 0;
+     crustTotal = 150;
    text2 = text2+"ksh"+crustTotal+".00<br>";
   } else if (selectedCrust === "Cheese Stuffed Crust") {
-     crustTotal = 3;
+     crustTotal = 300;
    text2 = text2+"ksh"+crustTotal+".00<br>";
   } else if (selectedCrust === "Spicy Crust") {
-     crustTotal = 0;
+     crustTotal = 450;
    text2 = text2+"ksh"+crustTotal+".00<br>";
   } else if (selectedCrust === "House Special Crust") {
-     crustTotal = 0;
+     crustTotal = 500;
    text2 = text2+"ksh"+crustTotal+".00<br>";
   }
   runningTotal = (runningTotal + crustTotal);
