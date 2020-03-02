@@ -72,16 +72,16 @@ function getSauce(runningTotal, text1, text2) {
      }
   }
   if (selectedSauce === "Marinara Sauce") {
-     sauceTotal = 0;
+     sauceTotal = 20;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   } else if (selectedSauce === "White Sauce") {
-     sauceTotal = 0;
+     sauceTotal = 20;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   } else if (selectedSauce === "Barbeque Sauce") {
-     sauceTotal = 0;
+     sauceTotal = 20;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   } else if (selectedSauce === "No Sauce") {
-     sauceTotal = 0;
+     sauceTotal = 20;
    text2 = text2+"ksh"+sauceTotal+".00<br>";
   }
   runningTotal = (runningTotal + sauceTotal);
